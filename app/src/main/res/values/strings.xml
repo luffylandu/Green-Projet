@@ -3,9 +3,7 @@
 
 
     <!-- Page d'acceuil -->
-    <String name="bottom_home_item">Acceuil</String>
-    <String name="bottom_collection_item">Collection</String>
-    <String name="bottom_add_item">Ajouter</String>
+
     <string name="home_page_title">A découvrir</string>
     <string name="home_page_last_plant_section">Dernière plantes</string>
 

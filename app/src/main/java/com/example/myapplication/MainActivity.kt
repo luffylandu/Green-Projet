@@ -15,20 +15,20 @@ class MainActivity : AppCompatActivity() {
         loadFragment(HomeFragment(this))
 
         val NavigationView = findViewById<BottomNavigationView>(R.id.navigation_view)
-        NavigationView.setOnNavigationItemReselectedListener {
+        NavigationView.setOnNavigationItemSelectedListener  {
             when (it.itemId)
             {
                 R.id.home_page -> {
                     loadFragment(HomeFragment(this))
-                    return@setOnNavigationItemReselectedListener
+                    return@setOnNavigationItemSelectedListener true
                 }
                 R.id.collection_page -> {
                     loadFragment(Collection_Fragment(this))
-                    return@setOnNavigationItemReselectedListener
+                    return@setOnNavigationItemSelectedListener true
                 }
                 R.id.add_plant_page -> {
                     loadFragment(AddPlantFragment(this))
-                    return@setOnNavigationItemReselectedListener
+                    return@setOnNavigationItemSelectedListener  true
                 }
                 else -> false
             }
